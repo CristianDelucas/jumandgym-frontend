@@ -6,6 +6,7 @@ import Methodology from './@pages/Methodology/Methodology';
 import Plans from './@pages/Plans/Plans';
 import logo from './assets/img/logo.png';
 import Footer from './components/core/Footer/Footer';
+import CookieConsent, { Cookies, getCookieConsentValue } from "react-cookie-consent";
 import './App.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
@@ -19,6 +20,9 @@ function App() {
     <Plans/>
     <Contact/>
     <Footer/>
+    <CookieConsent location="bottom" cookieName="myAwesomeCookieName3" expires={999} overlay>
+        This website uses cookies to enhance the user experience.
+    </CookieConsent>
     </div>
   );
 }
