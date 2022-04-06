@@ -10,7 +10,7 @@ export default function Plans(){
         <><div className="c-plans" id="plans">
         
             <div className="c-plans__mainContent">
-            <div className="descriptionContent-title">
+            <div className="title-section">
                 PLANES DE ENTRENAMIENTO Y NUTRICIóN
             </div>
             <div className="text-description">

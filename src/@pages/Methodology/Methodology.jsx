@@ -8,7 +8,7 @@ export default function Methodology(){
         <><div className="c-methodology" id="methodology">
             <div className="c-methodology__methodologyContent">
                 <Row>
-                <div className="methodologyContent-title">¿COMO TRABAJAMOS?</div>
+                <div className="title-section">¿COMO TRABAJAMOS?</div>
                 </Row>
                 <Row className="align-items-center">
                     <Col xs={12} md={12} lg={12} xl="6"  className="p-5">

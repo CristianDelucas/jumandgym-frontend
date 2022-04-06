@@ -5,7 +5,7 @@ import Home from './@pages/Home/Home';
 import Methodology from './@pages/Methodology/Methodology';
 import Plans from './@pages/Plans/Plans';
 import logo from './assets/img/logo.png';
-import './App.css';
+import './App.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (

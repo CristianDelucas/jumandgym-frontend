@@ -9,7 +9,7 @@ export default function Description(){
         <><div className="c-description" id="description">
             <div className="c-description__descriptionContent">
                 <Row>
-                <div className="descriptionContent-title">¿QUIENES SOMOS?</div>
+                <div className="title-section">¿QUIENES SOMOS?</div>
                 </Row>
                 <Row className="align-items-center">
                     <Col xs={12} md={12} lg={12} xl="6" className=" p-5 text-description">
