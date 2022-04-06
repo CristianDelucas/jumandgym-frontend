@@ -20,7 +20,7 @@ function App() {
     <Plans/>
     <Contact/>
     <Footer/>
-    <CookieConsent location="bottom" cookieName="myAwesomeCookieName3" expires={999} overlay>
+    <CookieConsent location="bottom" cookieName="myAwesomeCookieName3" expires={999} >
         This website uses cookies to enhance the user experience.
     </CookieConsent>
     </div>
