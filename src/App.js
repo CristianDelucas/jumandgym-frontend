@@ -5,6 +5,7 @@ import Home from './@pages/Home/Home';
 import Methodology from './@pages/Methodology/Methodology';
 import Plans from './@pages/Plans/Plans';
 import logo from './assets/img/logo.png';
+import Footer from './components/core/Footer/Footer';
 import './App.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
@@ -17,6 +18,7 @@ function App() {
     <Methodology/>
     <Plans/>
     <Contact/>
+    <Footer/>
     </div>
   );
 }

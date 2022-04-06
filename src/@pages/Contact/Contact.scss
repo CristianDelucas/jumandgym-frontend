@@ -1,4 +1,52 @@
-#contact{
-    background-color: rgb(16, 176, 204);
-    height: 100vh;
+.c-contact{
+    color:white;
+    background-color: #011601;
+    height:100%;
+    padding-bottom:40px;
+    
+    .description-section{
+        font-size:20px;
+    }
+
+    &__mainContent{
+        width:85%;
+        margin: auto;
+
+    .form-contact{
+        text-align:left;
+        
+        
+
+        &__input{
+            
+            background: rgba(0, 0, 0, 0.25);
+            mix-blend-mode: normal;
+            border: 1px solid rgba(0, 245, 69, 0.25);
+            box-sizing: border-box;
+            box-shadow: 0px 4px 4px rgba(0, 245, 69, 0.63);
+            width:280px;
+            height:51px;
+            color: white;
+            
+        }
+        .input-asunto{
+            min-width:66%;
+        }
+        .buttonForm{
+                border-color: white;
+                font-size: 20px;
+                color:white;
+                background-color: rgb(2, 95, 28);
+                border-radius:5px;
+                width:200px;
+                height:60px;
+                margin:auto 20px;
+        }
+    }
+    }
+}
+
+.hr-contact{
+    height:20px;
+    background-color: #025F1C;
 }
