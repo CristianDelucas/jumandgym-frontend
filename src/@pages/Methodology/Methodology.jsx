@@ -1,7 +1,6 @@
 import React from 'react'
 import { Col, Row } from 'react-bootstrap';
 import img_methodology from '../../assets/img/img_methodology.png';
-import './Methodology.scss';
 
 export default function Methodology(){
     return(

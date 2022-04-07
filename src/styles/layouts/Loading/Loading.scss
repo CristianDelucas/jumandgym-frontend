@@ -1,0 +1,12 @@
+.loading{
+    height: 100vh;
+    display: flex;
+    background-color:black;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__animation{
+        margin-top: 2.5rem;
+    }
+
+}

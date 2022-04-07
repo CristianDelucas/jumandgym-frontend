@@ -1,0 +1,50 @@
+.c-plans{
+    background-color: $color--background--section;
+    min-height: 100vh;
+
+
+    &__mainContent{
+        position: relative;
+        top:10px;
+        width:85%;
+        margin: auto;
+
+        .text-description{
+            font-size: 16px;
+            font-weight: 500;
+            text-align: center;
+            line-height: 2;
+
+            hr{
+                color:white;
+                height:3px;
+            }
+
+            .plans-button{
+                border-color: white;
+                font-size: 20px;
+                color:white;
+                background-color: #011601;
+                border-radius:13px;
+                width:200px;
+                margin:auto 20px;
+
+                
+                 @media screen and (max-width: 600px) {
+                    margin:10px;
+                 }
+                
+            }
+
+            // .button-off{
+            //     background-color: #011601;
+            // }
+
+        }
+    }
+    &-hr{
+        margin-top:50px;
+        height:100px;
+        background-color: $color--background;
+    }
+}

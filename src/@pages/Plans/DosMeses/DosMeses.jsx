@@ -1,6 +1,6 @@
 import React from 'react'
 import { Col, Row } from 'react-bootstrap';
-import './DosMeses.scss';
+
 export default function DosMeses(){
     return(
         <>

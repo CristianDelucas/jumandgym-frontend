@@ -5,7 +5,6 @@ import { Col, Row } from 'react-bootstrap';
 import jumandgym from '../../assets/img/jumandgym.png';
 import logo from '../../assets/img/logo.png';
 import arrow from '../../assets/img/arrow.svg';
-import './Home.scss';
 
 
 

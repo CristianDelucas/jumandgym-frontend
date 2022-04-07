@@ -1,3 +1,4 @@
+
 .c-home{
 
     &__bgHome{
@@ -8,7 +9,7 @@
         width: 100%;
         max-width: 100%;
         height: 100vh;
-        background:linear-gradient(180deg, rgba(0, 0, 0, 0.697) 0%, rgba(2, 54, 1, 0.82) 100%), url(../../assets/img/img_home.png);
+        background:linear-gradient(180deg, rgba(0, 0, 0, 0.697) 0%, $color--background-image 100%), url(../../../assets/img/img_home.png);
         background-repeat: no-repeat;
         background-position-x: center;
         background-position-y: 20%;
@@ -54,5 +55,5 @@
 }
 .title-jumandgym{
 z-index:1;
-   background: url(../../assets/img/jumandgym.png);
+   background: url(../../..//assets/img/jumandgym.png);
 }

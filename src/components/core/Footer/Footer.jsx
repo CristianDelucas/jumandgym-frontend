@@ -21,7 +21,7 @@ export default function Footer(){
                                 <a className="links" href="https://www.instagram.com/jumandgym/" target="_blank"><img className="img-redes" src={facebook} alt="facebook"/>
                                 @jumandgym</a>
                             </li>
-                            <li><a className="links" href="https://web.whatsapp.com/send?phone=34641040558&text=¡Hola JumAndGym! " target="_blank"><img className="img-redes" src={whatsapp} alt="whatsapp"/>
+                            <li><a className="links" href="https://web.whatsapp.com/send?phone=34641040558&text=¡Hola JumAndGym!" target="_blank"><img className="img-redes" src={whatsapp} alt="whatsapp"/>
                             +34 654543565
                             </a></li>
                         </ul>

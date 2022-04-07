@@ -1,6 +1,5 @@
 import React from 'react'
 import { Col, Row } from 'react-bootstrap';
-import './Description.scss';
 import img_description from '../../assets/img/img_description.png';
 
 

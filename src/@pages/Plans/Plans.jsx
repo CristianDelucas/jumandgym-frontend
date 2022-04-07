@@ -1,5 +1,4 @@
 import {React,useState} from 'react'
-import './Plans.scss';
 import DosMeses from './DosMeses/DosMeses';
 import CuatroMeses from './CuatroMeses/CuatroMeses';
 export default function Plans(){

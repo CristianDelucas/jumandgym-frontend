@@ -1,0 +1,29 @@
+
+
+.c-methodology{
+    min-height: 100vh;
+    max-height:100%;
+    padding-bottom:50px;
+    background-color: $color--background--section;
+    z-index: -1;
+    
+    /*Diferencia background*/
+    background:linear-gradient(180deg, rgba(0, 0, 0, 0.697) 0%, $color--background-image 100%), url(../../../assets/img/img_methodology.png);
+
+    &__methodologyContent{
+        position: relative;
+        top:10px;
+        width:85%;
+        margin: auto;
+        
+        .text-methodology{
+            color:$color--text;
+            margin-top: 1.5rem;
+            font-size: 16px;
+            font-weight: 500;
+            text-align: justify;
+            line-height: 2;
+        }
+    }
+
+}

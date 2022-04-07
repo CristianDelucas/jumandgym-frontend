@@ -1,6 +1,5 @@
 import React from 'react'
 import { Col, Row } from 'react-bootstrap';
-import './CuatroMeses.scss';
 export default function Plans(){
     return(
         <>
