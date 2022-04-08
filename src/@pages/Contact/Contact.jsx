@@ -15,7 +15,7 @@ export default function Contact(){
 
     return(
         <>
-            <div className="c-contact">
+            <div className="c-contact" id="contact">
             <div className="c-contact__mainContent">
                 <div className="title-section">
                     Formulario de contacto
