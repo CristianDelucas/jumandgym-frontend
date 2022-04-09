@@ -5,7 +5,7 @@ import { Col, Row } from 'react-bootstrap';
 import jumandgym from '../../assets/img/jumandgym.png';
 import logo from '../../assets/img/logo.png';
 import arrow from '../../assets/img/arrow.svg';
-
+import { HiChevronDoubleDown } from "react-icons/hi";
 
 
 export default function Home(){
@@ -25,9 +25,11 @@ export default function Home(){
                             </Col>
                         </Row>
                     </div>
-                    <div className='mainContent-options '>
-                            <Row xs={1} className="align-items-center pt-5">
-                                <a href="#description"><img className="img-fluid arrow" src={arrow} alt="arrow"/></a>
+                    <div className='mainContent-options justify-content-md-center'>
+                            <Row xs={1} className="pt-5">
+                                <Col className="link-next">
+                                    <a  href="#description"><HiChevronDoubleDown className="arrow" /></a>
+                                </Col>
                             </Row>
                     </div>
                 </div>

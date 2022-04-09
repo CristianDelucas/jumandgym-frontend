@@ -28,7 +28,6 @@
         margin: auto;
 
         .mainContent{
-            height:100%;
             
             &-logo{
 
@@ -45,13 +44,20 @@
 
 }
 
+.link-next{
+    display: flex;
+  justify-content: center;
+}
+
 .logo{
-    max-width:98px!important;
-    max-height:208px!important;
+    max-width:200px!important;
+    max-height:200px!important;
+    filter: drop-shadow(0 6px 2px black);
 }
 .arrow{
-    max-width:90px!important;
-    max-height:88px!important;
+    color:white;
+    height:80px;
+    width:80px;
 }
 .title-jumandgym{
 z-index:1;

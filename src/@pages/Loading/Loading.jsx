@@ -9,7 +9,7 @@ const Loading = () => {
 
     return (
         <div className="loading">
-            <img src={loading} alt="" />
+            <img src={loading} alt="logo" />
             <div className="loading__animation">
                 <Loader type="bubble-top" bgColor={"#025F1C"} color={'#01748e'} size={50} />
             </div>
