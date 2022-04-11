@@ -20,7 +20,11 @@ function App() {
 
 
   const [loading, setLoading] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
+  const toggle = () =>{
+    setIsOpen(!isOpen);
+  }
   useEffect(() => {
     setLoading(true)
     setTimeout(() => {
@@ -41,8 +45,8 @@ function App() {
           <img className="img-fluid logo-static" src={logo} alt="logo"/>
         </a>
       <Router>
-        <Sidebar/>
-        <Navbar/>
+        <Sidebar isOpen={isOpen} toggle={toggle}/>
+        <Navbar toggle={toggle}/>
       </Router>
       <Home/>
       <Description/>
@@ -51,7 +55,7 @@ function App() {
       <Contact/>
       <Footer/>
       <CookieConsent location="bottom" cookieName="myAwesomeCookieName3" expires={999} >
-          The website uses cookies to enhance the user experience.
+          This website uses cookies to enhance the user experience.
       </CookieConsent>
       
       </div>

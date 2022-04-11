@@ -1,9 +1,16 @@
-.navbar{
+import styled from 'styled-components'
+import {Link as LinkR} from 'react-router-dom'
+ import {Link as LinkS} from 'react-scroll'
+
+
+
+export const Nav = styled.nav`
+    background: ${({scrollNav}) => (scrollNav ? '#000': 'transparent')};
     position:fixed!important;
     width:100%;
     background-color:#000;
     height:80px;
-    // margin-top: -80px;
+     ${'' /* margin-top: -80px; */}
     display: flex;
     justify-content:center;
     align-items: center;
@@ -16,18 +23,20 @@
         transition:0.8s all ease;
     }
 
-    &__container{
+`
+
+export const NavbarContainer = styled.nav`
         display: flex;
         justify-content:space-between;
-        // height:80px;
+        ${'' /* // height:80px; */}
         height:0px;
         z-index:1;
         width:100%;
         padding:0 24px;
-        // max-width:1100px;
+        ${'' /* // max-width:1100px; */}
+`
 
-
-        .logo{
+export const NavLogo = styled(LinkR)`
             color:#fff;
             justify-self:flex-start;
             cursor:pointer;
@@ -37,10 +46,10 @@
             margin-left:24px;
             font-weight:bold;
             text-decoration:none;
-            
-        }
-        .mobileIcon{
-            display:none;
+`
+
+export const MobileIcon = styled.div`
+    display:none;
             
             
 
@@ -54,9 +63,10 @@
                 cursor:pointer;
                 color:#fff;
             }
-        }
 
-        .navMenu{
+`
+
+export const NavMenu = styled.ul`
             display:flex;
             align-items:center;
             list-style:none;
@@ -67,12 +77,13 @@
             @media screen and (max-width: 768px){
                 display:none;
             }
+`
 
-            &__item{
-                height:80px;
+export const NavItem = styled.li`
+    height:80px;
+`
 
-
-                &--links{
+export const NavLinks = styled(LinkS)`
                     color:#fff;
                     display:flex;
                     align-items:center;
@@ -84,20 +95,16 @@
                     &.active {
                         border-bottom: 3px solid #01bf71;
                     }
-                }
-            }
-        }
-
-
-        .navBtn{
+`
+export const NavBtn = styled.nav`
             display:flex;
             align-items:center;
 
             @media screen and (max-width: 768px){
                 display:none;
             }
-
-            &__link{
+`
+export const NavBtnLink = styled(LinkR)`
                 border-radius:50px;
                 background:#01bf71;
                 white-space:nowrap;
@@ -115,7 +122,5 @@
                     background:#fff;
                     color:#010606;
                 }
-            }
-        }
-    }
-}
+
+`

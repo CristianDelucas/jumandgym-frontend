@@ -1,41 +1,100 @@
-import React from 'react'
-import {FaBars} from 'react-icons/fa'
-import "./Navbar.scss";
-const Navbar = () => {
+import React, {useState, useEffect} from 'react';
+import logo from '../../../assets/img/logo.png';
+import {FaBars} from 'react-icons/fa';
+import {IconContext} from 'react-icons/lib'
+import {animateScroll as scroll} from 'react-scroll';
+import {
+    Nav,
+    NavbarContainer,
+    NavLogo,
+    MobileIcon,
+    NavMenu,
+    NavItem,
+    NavLinks,
+    NavBtn,
+    NavBtnLink
+} from './NavbarElements';
+
+
+
+const Navbar = ({toggle}) => {
+
+    const [scrollNav, setScrollNav] = useState(false);
+
+    const changeNav = ()=>{
+        if(window.scrollY >= 80){
+            setScrollNav(true);
+        }else{
+            setScrollNav(false);
+        }
+    }
+    useEffect(()=>{
+        window.addEventListener('scroll', changeNav)
+    }, []);
+
+    const toggleHome = () =>{
+        scroll.scrollToTop();
+    }
+
   return (
     <>
-        <div className="navbar">
-            <div className="navbar__container">
-
-                <a className="logo" href='#home'>JUMANDGYM</a>
-
-                <div className="mobileIcon">
-                    <FaBars />
-                </div>
-                
-                <ul className="navMenu">
-                    <li className="navMenu__item">
-                        <a className="navMenu__item--links" href='#home'>Inicio</a>
-                    </li>
-                    <li className="navMenu__item">
-                        <a className="navMenu__item--links" href='#description'>Descripción</a>
-                    </li>
-                    <li className="navMenu__item">
-                        <a className="navMenu__item--links" href='#methodology'>Metodología</a>
-                    </li>
-                    <li className="navMenu__item">
-                        <a className="navMenu__item--links" href='#plans'>Planes</a>
-                    </li>
-                    <li className="navMenu__item">
-                        <a className="navMenu__item--links" href='#contact'>Contacto</a>
-                    </li>
-                </ul>
-
-                <div className="navBtn">
-                    <a className="navBtn__link" href='#'>App</a>
-                </div>
-            </div>
-        </div>
+    <IconContext.Provider value={{color: '#fff'}}>
+        <Nav scrollNav={scrollNav}>
+            <NavbarContainer>
+                <NavLogo to="/" onClick={toggleHome}><img width={60}
+    height={60} src={logo} alt="JUMANDGYM"/></NavLogo>
+                <MobileIcon onClick={toggle}>
+                    <FaBars/>
+                </MobileIcon>
+                <NavMenu>
+                    <NavItem>
+                        <NavLinks to="home" 
+                        smooth={true} 
+                        duration={200} 
+                        spy={true} 
+                        exact='true' 
+                        offset={-80}
+                        >Inicio</NavLinks>
+                    </NavItem>
+                    <NavItem>
+                        <NavLinks to="description"
+                        smooth={true} 
+                        duration={200} 
+                        spy={true} 
+                        exact='true' 
+                        offset={-80}>Descripción</NavLinks>
+                    </NavItem>
+                    <NavItem>
+                        <NavLinks to="methodology"
+                        smooth={true} 
+                        duration={200} 
+                        spy={true} 
+                        exact='true' 
+                        offset={-80}>Metodología</NavLinks>
+                    </NavItem>
+                    <NavItem>
+                        <NavLinks to="plans"
+                        smooth={true} 
+                        duration={200} 
+                        spy={true} 
+                        exact='true' 
+                        offset={-80}>Planes</NavLinks>
+                    </NavItem>
+                    <NavItem>
+                        <NavLinks to="contact"
+                        smooth={true} 
+                        duration={200} 
+                        spy={true} 
+                        exact='true' 
+                        offset={-80}>Contacto</NavLinks>
+                    </NavItem>
+                </NavMenu>
+                <NavBtn>
+                    <NavBtnLink to="/signin">APP</NavBtnLink>
+                </NavBtn>
+            </NavbarContainer>
+        </Nav>
+        </IconContext.Provider>
     </>
   )
 }

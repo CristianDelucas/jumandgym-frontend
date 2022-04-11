@@ -1,5 +1,9 @@
-.sidebarContainer{
-    
+import styled from 'styled-components'
+import {FaTimes} from 'react-icons/fa'
+import {Link as LinkR} from 'react-router-dom'
+import {Link as LinkS} from 'react-scroll'
+
+export const SidebarContainer = styled.aside`
     position: fixed;
     z-index:999;
     width:100%;
@@ -10,18 +14,14 @@
     top:0;
     left:0;
     transition: 0.3s ease-in-out;
-    opacity:0%;
-    top:-100%;
-    
-    &:focus{
-        opacity:100%;
-        top:0;
-    }
+    opacity: ${({isOpen}) => (isOpen? '100%': '0')};
+    top: ${({isOpen}) => (isOpen? '0': '-100%')};
+`
 
-    .closeIcon{
-        color:#fff;
-
-        &__icon{
+export const CloseIcon = styled(FaTimes)`
+    color:#fff;
+`
+export const Icon = styled.div`
             position:absolute;
             top:1.2rem;
             right:1.5rem;
@@ -29,11 +29,16 @@
             font-size:2rem;
             cursor:pointer;
             outline:none;
-        }
-    }
 
-    .menu{
+`
+export const SidebarWrapper = styled.div`
+    color: #fff;
+`
+
+export const SidebarMenu = styled.ul`
+
         display:grid;
+        grid-template-columns:1fr;
         grid-template-rows:repeat(6,80px);
         text-align:center;
 
@@ -41,8 +46,9 @@
             grid-template-rows:repeat(6,60px);
         }
 
-        &__links{
+`
 
+export const SidebarLink = styled(LinkS)`
             display:flex;
             align-items:center;
             justify-content:center;
@@ -58,15 +64,16 @@
                 color:#01bf71;
                 transition:0.2s ease-in-out;
             }
-        }
-    }
+`
 
-    .wrap{
 
-        color: #fff;
+export const SideBtnWrap = styled(LinkS)`
+    display:flex;
+    justify-content:center;
+`
 
-        &__route{
-            border-radius:50x;
+export const SidebarRoute = styled(LinkR)`
+    border-radius:50x;
             background:#01bf71;
             white-space:nowrap;
             padding:16px 64px;
@@ -83,6 +90,4 @@
                 background:#fff;
                 color: #010606;
             }
-        }
-    }
-}
+`
