@@ -1,7 +1,7 @@
 import React from 'react'
 import { Col, Row } from 'react-bootstrap';
 
-
+import {Link as LinkS} from 'react-scroll'
 import jumandgym from '../../assets/img/jumandgym.png';
 import logo from '../../assets/img/logo.png';
 import arrow from '../../assets/img/arrow.svg';
@@ -28,7 +28,7 @@ export default function Home(){
                     <div className='mainContent-options justify-content-md-center'>
                             <Row xs={1} className="pt-5">
                                 <Col className="link-next">
-                                    <a  href="#description"><HiChevronDoubleDown className="arrow" /></a>
+                                    <LinkS offset={-80} style={{cursor:'pointer'}} to="description"><HiChevronDoubleDown className="arrow" /></LinkS>
                                 </Col>
                             </Row>
                     </div>

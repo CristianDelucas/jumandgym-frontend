@@ -19,44 +19,29 @@ const Sidebar = ({isOpen, toggle} ) => {
 
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink to="home" onClick={toggle}>
+          <SidebarLink offset={-80} to="home" onClick={toggle}>
             Inicio
           </SidebarLink>
-          <SidebarLink to="description" onClick={toggle}>
+          <SidebarLink offset={-80} to="description" onClick={toggle}>
             Descripción
           </SidebarLink>
-          <SidebarLink to="methodology" onClick={toggle}>
+          <SidebarLink offset={-80} to="methodology" onClick={toggle}>
             Metodología
           </SidebarLink>
-          <SidebarLink to="plans" onClick={toggle}>
+          <SidebarLink offset={-80} to="plans" onClick={toggle}>
             Planes
           </SidebarLink>
-          <SidebarLink to="contact" onClick={toggle}>
+          <SidebarLink offset={-80} to="contact" onClick={toggle}>
             Contacto
           </SidebarLink>
         </SidebarMenu>
         <SideBtnWrap>
-          <SidebarRoute to="/signin">
+          <SidebarRoute to="/signin" onClick={toggle}>
               APP
           </SidebarRoute>
         </SideBtnWrap>
       </SidebarWrapper>
     </SidebarContainer>
-
-    // <div className="sidebarContainer">
-    //     <div className="closeIcon">
-    //         <HiOutlineChevronDoubleUp className="closeIcon__icon"/>
-    //     </div>
-    //     <div className="menu">
-    //         <div className="menu__links">
-    //         </div>
-    //     </div>
-
-    //     <div className="wrap">
-    //         <div className="wrap__route">
-    //         </div>
-    //     </div>
-    // </div>
   )
 }
 

@@ -41,6 +41,7 @@ export const SidebarMenu = styled.ul`
         grid-template-columns:1fr;
         grid-template-rows:repeat(6,80px);
         text-align:center;
+        padding:0!important;
 
         @media screen and (max-width:480px){
             grid-template-rows:repeat(6,60px);
@@ -73,7 +74,7 @@ export const SideBtnWrap = styled(LinkS)`
 `
 
 export const SidebarRoute = styled(LinkR)`
-    border-radius:50x;
+            border-radius:50px;
             background:#01bf71;
             white-space:nowrap;
             padding:16px 64px;
@@ -84,6 +85,7 @@ export const SidebarRoute = styled(LinkR)`
             cursor:pointer;
             transition:all 0.2s ease-in-out;
             text-decoration:none;
+
 
             &:hover{
                 transition:all 0.2s ease-in-out;
