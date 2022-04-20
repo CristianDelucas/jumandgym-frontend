@@ -46,7 +46,7 @@ export default function Contact(){
                     </Col>
                     <Col xs={12} className="pt-3">
                         <p>Mensaje</p>
-                        <textarea className="form-contact__input input-asunto" id="mensaje" type="text" placeholder="Rellene aquí su mensaje..." {...register("mensaje", {required:{value:true, message:"Es obligatorio"}})}/>
+                        <textarea className="form-contact__input input-message" id="mensaje" type="text" placeholder="Rellene aquí su mensaje..." {...register("mensaje", {required:{value:true, message:"Es obligatorio"}})}/>
                         {errors.number && <p>{errors.number.message}</p>}
                     </Col>
                     <Col  className="pt-4">

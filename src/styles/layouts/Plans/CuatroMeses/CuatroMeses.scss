@@ -1,6 +1,8 @@
 .card-plan{
     padding:2vh;
     
+    
+
     &__content{
         background-color:white;
         border-radius:10px;
@@ -8,14 +10,22 @@
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        
-
         border: solid 6px #AAF6AA;
 
+
+        &:hover{ 
+            border: solid 10px #AAF6AA;
+            z-index: -1;
+            transition: transform 0.6s linear;
+            transform: scale(0.97, 0.93);
+         }
+
+        
+
         &--title{
+            font-family:junglelaw;
             color:black;
-            font-size: 20px;
-            padding:10px;
+            font-size: 30px;
         }
         &--description{
             color:black;

@@ -9,8 +9,11 @@ import Plans from './@pages/Plans/Plans';
 import Loading from './@pages/Loading/Loading';
 import logo from './assets/img/logo.png';
 import Sidebar from './components/core/Navbar/Sidebar/Sidebar';
+import Whatsapp from './components/Whatsapp/ReactApp';
 import Navbar from './components/core/Navbar/Navbar';
 import Footer from './components/core/Footer/Footer';
+
+
 import CookieConsent, { Cookies, getCookieConsentValue } from "react-cookie-consent";
 
 import "./styles/app.scss";
@@ -44,6 +47,7 @@ function App() {
         <a href="#home">
           <img className="img-fluid logo-static" src={logo} alt="logo"/>
         </a>
+        <Whatsapp/>
       <Router>
         <Sidebar isOpen={isOpen} toggle={toggle}/>
         <Navbar toggle={toggle}/>
