@@ -22,7 +22,7 @@ const ReactApp = () => {
 			headerTxtColor="black"
 			headerBgColor="#AAF6AA"
 			headerTitle="JUM AND GYM"
-			headerCaption="Online"
+			headerCaption=" 🟢 Conectado"
 			bodyBgColor="#bbb"
 			chatPersonName="Entrenador"
 			chatMessage={<>¡Hola PUMA! 👋 <br /><br /> ¿En que podemos ayudarte?</>}
