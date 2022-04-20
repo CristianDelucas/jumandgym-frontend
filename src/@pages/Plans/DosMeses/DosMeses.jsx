@@ -1,11 +1,18 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { Col, Row } from 'react-bootstrap';
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 export default function DosMeses(){
+
+    useEffect(()=>{
+        Aos.init({duration:2000});
+    },[]);
+
     return(
         <>
         <Row className="align-items-center">
-            <Col xs={12} md={6} lg={4} className="card-plan">
+            <Col xs={12} md={6} lg={4} className="card-plan" data-aos="zoom-in">
                 <div className="card-plan__content">
                     <div className="card-plan__content--title">
                         Entrenamiento
@@ -24,7 +31,7 @@ export default function DosMeses(){
                     </div>
                 </div>
             </Col>
-            <Col xs={12} md={6} lg={4} className="card-plan">
+            <Col xs={12} md={6} lg={4} className="card-plan " data-aos="zoom-in">
                 <div className="card-plan__content">
                     <div className="card-plan__content--title">
                         Dieta
@@ -43,7 +50,7 @@ export default function DosMeses(){
                     </div>
                 </div>
             </Col>
-            <Col xs={12} md={6} lg={4} className="card-plan">
+            <Col xs={12} md={6} lg={4} className="card-plan" data-aos="zoom-in">
                 <div className="card-plan__content">
                     <div className="card-plan__content--title">
                         Entrenamiento + Dieta

@@ -9,7 +9,7 @@
         width: 100%;
         max-width: 100%;
         height: 100vh;
-        background:linear-gradient(180deg, rgba(0, 0, 0, 0.697) 0%, $color--background-image 100%), url(../../../assets/img/img_home.png);
+        background:linear-gradient(180deg, rgba(0, 0, 0, 0.697) 0%, $color--background-image 100%), url(../../../assets/img/img_home1.jpeg);
         background-repeat: no-repeat;
         background-position-x: center;
         background-position-y: 20%;
@@ -45,8 +45,9 @@
 }
 
 .link-next{
-    display: flex;
+display: flex;
   justify-content: center;
+  
 }
 
 .logo{
