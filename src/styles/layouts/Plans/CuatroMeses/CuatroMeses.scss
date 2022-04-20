@@ -1,9 +1,16 @@
 .card-plan{
     padding:2vh;
+    
     &__content{
         background-color:white;
         border-radius:10px;
         padding:10px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        
+
+        border: solid 6px #AAF6AA;
 
         &--title{
             color:black;
@@ -35,4 +42,8 @@
             }
         }
     }
+}
+
+.full-height{
+    min-height: 100%!important;
 }

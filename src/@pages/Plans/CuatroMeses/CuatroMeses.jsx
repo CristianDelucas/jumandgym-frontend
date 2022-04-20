@@ -12,9 +12,9 @@ export default function Plans(){
 
     return(
         <>
-        <Row className="align-items-center">
-            <Col xs={12} md={6} lg={4} className="card-plan" data-aos="zoom-in">
-                <div className="card-plan__content">
+        <Row >
+            <Col xs={12} md={4} lg={4} className="card-plan" data-aos="zoom-in">
+                <div className="card-plan__content full-height">
                     <div className="card-plan__content--title">
                         Entrenamiento
                         <hr className="hr-green"/>
@@ -32,16 +32,15 @@ export default function Plans(){
                     </div>
                 </div>
             </Col>
-            <Col xs={12} md={6} lg={4} className="card-plan" data-aos="zoom-in">
-                <div className="card-plan__content">
+            <Col xs={12} md={4} lg={4} className="card-plan" data-aos="zoom-in">
+                <div className="card-plan__content full-height">
                     <div className="card-plan__content--title">
                         Dieta
                         <hr className="hr-green"/>
                     </div>
                     <div className="card-plan__content--description">
-                    <p>📓 Este plan incluye entrenamiento personalizado.</p>
-                    <p>🔎 Revisión mensual de tú entrenamiento.</p>
-                    <p>🏋️‍♀️ Tendrás acceso a un descuento para entrenamientos personales.</p>
+                    <p>📓 Este plan incluye una dieta personalizada acorde a tus necesidades.</p>
+                    <p>🔎 Revisión mensual de tú dieta.</p>
                     <p>🧨 Proximamente acceso a la App móvil.</p>
                     </div>
                     <div className="card-plan__content--price-description">
@@ -51,15 +50,15 @@ export default function Plans(){
                     </div>
                 </div>
             </Col>
-            <Col xs={12} md={6} lg={4} className="card-plan" data-aos="zoom-in">
-                <div className="card-plan__content">
+            <Col xs={12} md={4} lg={4} className="card-plan" data-aos="zoom-in">
+                <div className="card-plan__content full-height">
                     <div className="card-plan__content--title">
                         Entrenamiento + Dieta
                         <hr className="hr-green"/>
                     </div>
                     <div className="card-plan__content--description">
-                    <p>📓 Este plan incluye entrenamiento personalizado.</p>
-                    <p>🔎 Revisión mensual de tú entrenamiento.</p>
+                    <p>📓 Este plan incluye entrenamiento y dieta personalizada acorde a tus necesidades.</p>
+                    <p>🔎 Revisión mensual de tú entrenamiento y dieta.</p>
                     <p>🏋️‍♀️ Tendrás acceso a un descuento para entrenamientos personales.</p>
                     <p>🧨 Proximamente acceso a la App móvil.</p>
                     </div>
