@@ -9,8 +9,7 @@ import Plans from './@pages/Plans/Plans';
 import Loading from './@pages/Loading/Loading';
 import logo from './assets/img/logo.png';
 import Sidebar from './components/core/Navbar/Sidebar/Sidebar';
-import Whatsapp from './components/Whatsapp/ReactApp';
-import Whatsapp1 from './components/Whatsapp/Whatsapp';
+import Whatsapp from './components/Whatsapp/Whatsapp';
 import Navbar from './components/core/Navbar/Navbar';
 import Footer from './components/core/Footer/Footer';
 
@@ -49,7 +48,6 @@ function App() {
           <img className="img-fluid logo-static" src={logo} alt="logo"/>
         </a>
         <Whatsapp/>
-        <Whatsapp1/>
       <Router>
         <Sidebar isOpen={isOpen} toggle={toggle}/>
         <Navbar toggle={toggle}/>
