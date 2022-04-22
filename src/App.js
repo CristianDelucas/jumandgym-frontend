@@ -10,11 +10,12 @@ import Loading from './@pages/Loading/Loading';
 import logo from './assets/img/logo.png';
 import Sidebar from './components/core/Navbar/Sidebar/Sidebar';
 import Whatsapp from './components/Whatsapp/ReactApp';
+import Whatsapp1 from './components/Whatsapp/Whatsapp';
 import Navbar from './components/core/Navbar/Navbar';
 import Footer from './components/core/Footer/Footer';
 
 
-import CookieConsent, { Cookies, getCookieConsentValue } from "react-cookie-consent";
+import CookieConsent from "react-cookie-consent";
 
 import "./styles/app.scss";
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -48,6 +49,7 @@ function App() {
           <img className="img-fluid logo-static" src={logo} alt="logo"/>
         </a>
         <Whatsapp/>
+        <Whatsapp1/>
       <Router>
         <Sidebar isOpen={isOpen} toggle={toggle}/>
         <Navbar toggle={toggle}/>
@@ -58,9 +60,11 @@ function App() {
       <Plans/>
       <Contact/>
       <Footer/>
-      <CookieConsent location="bottom" cookieName="myAwesomeCookieName3" expires={999} >
-          This website uses cookies to enhance the user experience.
-      </CookieConsent>
+      <CookieConsent buttonText="Aceptar términos" location="bottom" cookieName="myAwesomeCookie" style={{
+    background: "black",
+  }} >
+          Esta página web usa cookies para mejorar la experiencia del usuario.
+    </CookieConsent>
       
       </div>
     }

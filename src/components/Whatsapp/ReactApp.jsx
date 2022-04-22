@@ -7,11 +7,11 @@ const ReactApp = () => {
 	return (
 		<WhatsAppWidget
 			phoneNo="34641040558"
-			position="right"
+			position="left"
 			widgetWidth="300px"
 			widgetWidthMobile="260px"
 			autoOpen={true}
-			autoOpenTimer={5000}
+			autoOpenTimer={60000}
 			messageBox={true}
 			messageBoxTxt=""
 			iconSize="40"
