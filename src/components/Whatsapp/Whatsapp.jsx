@@ -9,17 +9,16 @@ const Whatsapp = () => {
     const [message, setMessage] = useState('')
 
     const [flag, setflagWhatsapp] = useState(false);
-    const [open, setOpen] = useState(false);
+    const [openChat, setOpenChat] = useState(false);
+    
     useEffect(()=>{
         Aos.init({duration:1000});
         setTimeout(() => {
-            if(!open){
+            if(!openChat){
                 setflagWhatsapp(true)
             }
           }, 60000)
-    }
-        
-    ,[]);
+    },[]);
 
 
   return (
@@ -70,7 +69,7 @@ const Whatsapp = () => {
         </div>
         :<></>}
         <div className="fixed-whatsapp">
-            <img src={whatsapp} alt="whatsapp" onClick={()=>{setflagWhatsapp(!flag)}}/>
+            <img src={whatsapp} alt="whatsapp" onClick={()=>{setflagWhatsapp(!flag) ; setOpenChat(true)} }/>
         </div>
         
         </div>
