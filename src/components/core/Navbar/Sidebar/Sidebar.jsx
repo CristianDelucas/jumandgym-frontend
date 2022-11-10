@@ -36,7 +36,8 @@ const Sidebar = ({isOpen, toggle} ) => {
           </SidebarLink>
         </SidebarMenu>
         <SideBtnWrap>
-          <SidebarRoute to="/signin" onClick={toggle}>
+        <SidebarRoute target='_parent'  rel='noreferrer' href='https://appjumandgym.netlify.app/' to="https://capable-crumble-8aa1cc.netlify.app/"
+           onClick={toggle}>
               APP
           </SidebarRoute>
         </SideBtnWrap>
