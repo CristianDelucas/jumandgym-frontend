@@ -63,7 +63,7 @@ const Whatsapp = () => {
                 </div>
                 
                 <div>
-                <a href={'https://wa.me/34641040558?text='+message} target="_blank" className='c-whatsapp__card--footer__btn' rel="noreferrer" styles="color: white; background-color: green;">Empezar Chat</a>
+                <a href={'https://wa.me/34222222222?text='+message} target="_blank" className='c-whatsapp__card--footer__btn' rel="noreferrer" styles="color: white; background-color: green;">Empezar Chat</a>
                 </div>
             </div>
         </div>
