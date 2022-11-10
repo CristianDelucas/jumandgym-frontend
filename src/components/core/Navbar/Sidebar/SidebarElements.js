@@ -70,7 +70,7 @@ export const SidebarLink = styled(LinkS)`
 `
 
 
-export const SideBtnWrap = styled(LinkS)`
+export const SideBtnWrap = styled.nav`
     display:flex;
     justify-content:center;
 `
