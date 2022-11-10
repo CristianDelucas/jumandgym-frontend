@@ -1,20 +1,30 @@
 
 
 .c-methodology{
-    min-height: 100vh;
+    min-height: 70vh;
     max-height:100%;
-    padding-bottom:50px;
     background-color: $color--background--section;
     z-index: -1;
+    display: flex;
     
     /*Diferencia background*/
     background:linear-gradient(180deg, rgba(0, 0, 0, 0.697) 0%, $color--background-image 100%), url(../../../assets/img/img_methodology.png);
+
+
+    
 
     &__methodologyContent{
         position: relative;
         top:10px;
         width:85%;
         margin: auto;
+
+        @media screen and (max-width: 1200px) {
+            .row{
+                flex-direction: column-reverse;
+            }
+           
+        }
         
         .text-methodology{
             color:$color--text;
@@ -23,6 +33,10 @@
             font-weight: 500;
             text-align: justify;
             line-height: 2;
+        }
+
+        .img-section{
+            border-radius: 20px;
         }
     }
 

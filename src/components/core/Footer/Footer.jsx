@@ -21,8 +21,8 @@ export default function Footer(){
                                 <a className="links" href="https://www.instagram.com/jumandgym/" target="_blank"><img className="img-redes" src={facebook} alt="facebook"/>
                                 @jumandgym</a>
                             </li>
-                            <li><a className="links" href="https://web.whatsapp.com/send?phone=34641040558&text=¡Hola JumAndGym!" target="_blank"><img className="img-redes" src={whatsapp} alt="whatsapp"/>
-                            +34 654543565
+                            <li><a className="links" href="https://web.whatsapp.com/send?phone=34222222222&text=¡Hola JumAndGym!" target="_blank"><img className="img-redes" src={whatsapp} alt="whatsapp"/>
+                            +34 222222222
                             </a></li>
                         </ul>
                     </Col>
@@ -46,7 +46,7 @@ export default function Footer(){
                 <hr />
                 <Row >
                     <Col xs={12}>
-                        &copy;{new Date().getFullYear()} jumandgym | All right reserved
+                        &copy;{new Date().getFullYear()} jumandgym
                     </Col>
                 </Row>
             </div>

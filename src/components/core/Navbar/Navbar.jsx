@@ -90,7 +90,7 @@ const Navbar = ({toggle}) => {
                     </NavItem>
                 </NavMenu>
                 <NavBtn>
-                    <NavBtnLink to="/signin">APP</NavBtnLink>
+                    <NavBtnLink target='_parent'  rel='noreferrer' href='https://capable-crumble-8aa1cc.netlify.app/' to="https://capable-crumble-8aa1cc.netlify.app/">APP</NavBtnLink>
                 </NavBtn>
             </NavbarContainer>
         </Nav>
